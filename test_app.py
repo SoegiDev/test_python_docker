@@ -23,5 +23,5 @@ def test_number(web, number):
 def test_say(web, say):
     response = web.get(f'/say/{say}')
     assert response.status_code == 200
-    assert response.data == b'Hello, Hai Fajar Soegi'
+    assert response.data == b'Hello, Fajar Soegi'
     
