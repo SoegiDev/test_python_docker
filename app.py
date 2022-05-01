@@ -12,7 +12,7 @@ def hello_number(number):
 @app.route('/say/<name>')
 def hello_say(name):
     test = "Hai"
-    return f'Hello, Hai {name}'
+    return f'Hello, {test} {name}'
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
