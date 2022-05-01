@@ -14,5 +14,10 @@ def hello_say(name):
     test = "Hai"
     return f'Hello, {test} {name}'
 
+@app.route('/say/age/<name>/<int:age>')
+def hello_say_age(name,age):
+    test = "Hai"
+    return f'Hello, {test} {name} {age}'
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
