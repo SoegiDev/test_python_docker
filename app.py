@@ -7,11 +7,12 @@ def hello_world():
 
 @app.route('/number/<int:number>')
 def hello_number(number):
-    return f'Hello,Your NUmber is {number} '
+    return f'Hello,Your NUmber is {number}'
 
 @app.route('/say/<name>')
 def hello_say(name):
-    return f'Hello, {name}'
+    test = "Hai"
+    return f'Hello, Hai {name}'
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000, debug=True)
