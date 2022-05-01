@@ -30,5 +30,5 @@ def test_say(web, say):
 def test_say_age(web, say,age):
     response = web.get(f'/say/age/{say}/{age}')
     assert response.status_code == 200
-    assert response.data == b'Hello, Hai fajar soegi 14'
+    assert response.data == b'Hello, Hai fajar soegi 12'
     
