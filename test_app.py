@@ -32,7 +32,7 @@ def test_say_age(web, say,age):
     assert response.status_code == 200
     assert response.data == b'Hello, Hallo fajar soegi 14'
     
-def test_hello(web):
+def test_mywife(web):
     response = web.get('/mywife')
     assert response.status_code == 200
     assert response.data == b'Hello, Eva'

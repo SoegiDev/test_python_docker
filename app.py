@@ -20,7 +20,7 @@ def hello_say_age(name,age):
     return f'Hello, {test} {name} {age}'
 
 @app.route('/mywife')
-def hello_say_age():
+def hello_say_wife():
     test = "Eva"
     return f'Hello, {test}'
 
